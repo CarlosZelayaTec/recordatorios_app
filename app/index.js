@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { StyleSheet, Text, View, Button, TextInput } from "react-native";
+import { Link } from "expo-router";
 
 export default function App() {
   const [resultado, setResultado] = useState(0);
@@ -43,6 +44,7 @@ export default function App() {
       <View>
         <Text>Resultado: {resultado} </Text>
       </View>
+      <Link href="/Compras">Ir a compras</Link>
       <StatusBar style="auto" />
     </View>
   );
